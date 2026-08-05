@@ -36,10 +36,3 @@ Retrieve the module outputs:
 ```
 terraform output
 ```
-
-Example output:
-
-```
-cluster_name = "project-cluster"
-cluster_location = "us-central1"
-```
