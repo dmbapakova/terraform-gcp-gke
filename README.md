@@ -22,3 +22,22 @@ module demo {
 terraform init
 terraform apply
 ```
+### Outputs
+
+| Name | Description |
+|------|-------------|
+| cluster_name | The cluster name |
+| cluster_location | The cluster location (region or zone) |
+
+#### Example
+
+```bash
+terraform output
+```
+
+Example output:
+
+```text
+cluster_name = "project-cluster"
+cluster_location = "us-central1"
+```
