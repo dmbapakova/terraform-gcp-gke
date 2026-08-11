@@ -1,9 +1,9 @@
-output "Name of cluster" {
-  description = "The cluster name"
+output "cluster_name" {
+  description = "The name of cluster"
   value       = google_container_cluster.primary.name
 }
 
-output "Location of cluster" {
-  description = "The cluster location"
+output "cluster_location" {
+  description = "The location of cluster"
   value       = google_container_cluster.primary.location
 }
