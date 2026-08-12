@@ -24,6 +24,21 @@ terraform apply
 ```
 ## Outputs
 
+### Please copy below code to output.tf
+```
+output "cluster_name" {
+  description = "The name of cluster"
+  value       = google_container_cluster.primary.name
+}
+
+output "cluster_location" {
+  description = "The location of cluster"
+  value       = google_container_cluster.primary.location
+}
+```
+
+### Output
+
 | Name | Description |
 |------|-------------|
 | `cluster_name` | The cluster name |
